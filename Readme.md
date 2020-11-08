@@ -1,6 +1,6 @@
 # Main Motto :
-# Our bot is a jobbot, we named it as j-bot.
-# which helps to find a required job for the user.
+## Our bot is a jobbot, we named it as j-bot.
+## which helps to find a required job for the user.
 
 # Bot interface :
 
