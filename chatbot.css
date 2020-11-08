@@ -1,0 +1,98 @@
+/*Styling the chating page*/
+html{
+	background:url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-012.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+}
+/*Styling and sizing the message container div tag*/
+#div{
+	width:60%;
+	border:3px solid #b30059;
+	background-color: rgb(255, 179, 236,0.3);
+	border-radius:25px;
+	font-size:0.5cm;
+	margin:3.5% 0 -2px 21%;
+}
+/*styling,positioning and colouring the user input messages*/
+.user_input{
+	display:inline-block;
+	width:29%;
+	text-align:right;
+	margin:5px 0 0 65%;
+	background:linear-gradient(to right,#ff8080,#ff6666,#ff4d4d,#ff3333,#ff1a1a,#ff0000);
+	border-top-right-radius:none;
+	border-top-left-radius:50px;
+	border-bottom-right-radius:50px;
+	border-bottom-left-radius:50px;
+	color:white;
+	padding:10px 12px 10px 20px;
+	border:3px solid white;
+}
+/*styling,positioning and colouring the bot output messages*/
+.bot_output{
+	margin:5px 400px 0 20px;
+	display:inline-block;
+	text-align:left;
+	border-top-right-radius:50px;
+	border-top-left-radius:none;
+	border-bottom-right-radius:50px;
+	border-bottom-left-radius:50px;
+	background:linear-gradient(to right,#55ff00,#66ff1a,#88ff4d,#aaff80,#ccffb3);
+	padding:20px 20px 20px 10px;
+	border:3px solid white;
+}
+/*positiong the icon of the bot to top of the corner*/
+.icon img{
+	height:60px;
+	top:2.75%;
+	left:2%;
+	position:fixed;
+}
+.icon p{
+	top:3.5%;
+	left:7.1%;
+	position:fixed;
+	color:black;
+}
+/*placing the intro message to middle of the page and stick the position to top of the page*/
+.intro{
+	position:sticky;
+	top:0%;
+	height:20%;
+	width:60%;
+	border:3px solid #000066;
+	margin:8.5% 0 0 21%;
+	background:#b3ffff;
+}
+.intro p{
+	margin:-10% 0 0 25%;
+	font-size:1.2cm;
+	font-style:bold;
+	color:#ff3399;
+	text-shadow:3px 3px 1px grey;
+}
+.img1{
+	display:inline-block;
+	height:100%;
+	border-radius:100%;
+}
+.img2{
+	display:inline-block;
+	height:90%;
+  margin:-11.5% 0 0% 85%;
+}
+/*fixing the type bar to bottom of the page*/
+#type_bar{
+	width:60%;
+	height:7%;
+	outline:none;
+	margin:0.25% 0 0% 21%;
+	font-size:0.5cm;
+	border:3px solid #b30059;
+	border-radius:50cm;
+	padding:20px;
+}
+#submit{
+	height:5%;
+	margin:-2.8% 0 0 75%;
+}

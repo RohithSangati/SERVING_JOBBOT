@@ -1,0 +1,47 @@
+<!DOCTYPE=html>
+<!--This is the main bot page.It enables the users to ask the queries-->
+<html>
+
+	<head>
+		<title>CHATBOT</title>
+		<link rel = "icon" href = "https://pinnacle.works/site/wp-content/uploads/2019/10/gen.png" type = "image/x-icon"> 
+		<meta charset="utf-8">
+		<meta name="description" content="It is intro page to job chatbot">
+		<meta name="author" content="Rohith,sanjay">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link href="{{url_for('static',filename='css/chatbot.css')}}" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<!--placing the bot icon and name-->
+		<span class="icon">
+			<img src="https://www.flaticon.com/svg/static/icons/svg/1786/1786548.svg" alt="Bot">
+			<p>J-BOT</p>
+		</span>
+		
+		<!--this di tag is used for placing user and bot images and also to show intro message of the chatbot-->
+		<div class="intro">
+			<img  class ="img1" src="https://pinnacle.works/site/wp-content/uploads/2019/10/gen.png" alt="Bot Image">
+			<p>HELLO!I AM {{data.name}}</p>
+			<img class="img2" src="https://www.flaticon.com/svg/static/icons/svg/3048/3048122.svg" alt="Bot image">
+		</div>
+		
+		<!--This div tag is used to show and store the chating of the user and bot-->
+		<div id="div">
+            {% block content %}
+            {% endblock %}		
+		</div>
+		
+		<!--We can take the input from the user by using this input bar.-->
+		<input type="text" id="type_bar" placeholder="Type your message" />
+		<img id="submit" onclick="send_response()" src="https://www.flaticon.com/svg/static/icons/svg/2516/2516962.svg"/>
+		<script type="text/javascript" src="{{url_for('static',filename='js/chatbot.js')}}"></script>
+		
+	</body>
+	
+</html>

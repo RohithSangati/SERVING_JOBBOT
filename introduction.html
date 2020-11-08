@@ -1,0 +1,11 @@
+<!--It is the template for bot introduction-->
+<div class="bot_output">
+    <p>I can help you in following senarios:</p>
+    <p>Type your questions related to :</p>
+	<ul>
+        {% for task in data.tasks %}
+        <li>{{task.key}}</li>
+        {% endfor %}
+    </ul>
+	<p>Type End to exit the chat</p>
+</div>
